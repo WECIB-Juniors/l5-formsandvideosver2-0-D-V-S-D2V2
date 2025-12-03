@@ -1,0 +1,13 @@
+body {
+    text-align: center;
+    background-color: #36454F;
+    color:  #FFD700;
+    font-family: Arial, sans-serif;
+}
+input, select, textarea {
+    background-color: #800020;
+    color: #FFFFF0;
+}
+header {
+    text-align: center;
+}

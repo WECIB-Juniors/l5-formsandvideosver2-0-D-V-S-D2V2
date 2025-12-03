@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L5 Assignment</title>
+    <link href="./style.css" rel="stylesheet">
+    
+</head>
+<header>
+        <h1>What is your favorite season?</h1>
+        <p>This questionnaire is inquiring about your favorite season.</p>
+    </header>
+<body> 
+    
+    
+    <!--I chose get becuase it doesnt really need any secuirity it is just asking your favorite season-->
+    <main>
+        <form class="responsive-form" method="get" action="./index.html">
+            <label for="fullname">Full Name: </label> <br>
+                <input type="text" name="fullname" id="fullname" required><br><br>
+
+            <label for="email">Email address:</label>  <br>
+                <input type="email" id="email"  required name="email"> <br><br>
+            <label for="season">Favorite season?:</label><br>
+                <select name="season">
+                    <option value="">--Please choose an option--</option>
+                    <option value="Spring">Spring</option>
+                    <option value="Summer">Summer</option>
+                    <option value="Fall">Fall</option>
+                    <option value="Winter">Winter</option>
+                </select><br><br>
+            <label for="reason">Why did you pick that as your favorite season?</label><br>
+                <textarea name="reason"></textarea><br><br>
+            <label for = "Captcha" >Are you a robot?</label><br>
+                <input type="checkbox" name="Captcha" value="Captcha" >No <br><br>
+            <input type="submit">
+        <!--Made name required and email required. And then didn't make the captcha required because the robot will not click it so I can filter by people who did click it. I also made the textarea adjustable-->
+        </form>
+    </main>
+    <br><br><br><br><br><br><br>
+    <section>
+        <h2>If this form is stressing you out<br> please watch this video to help calm you down</h2>
+        <!--Got this video from pexels-->
+        <video autoplay controls width="360" height="240" aria-label="Calming scenic video of rain falling in a mountainy forest region">
+            <source src="./Scenic.mp4" type="video/mp4" />
+            <track kind="captions" src="../captions.vtt" srclang="en" label="English" default>
+        Your browser does not support the video tag.
+    </video>
+    </section>
+    
+
+</body>
+</html>
